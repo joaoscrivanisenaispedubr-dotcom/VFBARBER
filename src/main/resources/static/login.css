@@ -1,0 +1,117 @@
+
+.auth-wrapper {
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+}
+
+.auth-card {
+    background-color: #1a1a1a;
+    border-radius: 18px;
+    padding: 40px;
+    width: 100%;
+    max-width: 420px;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+    border: 1px solid #2a2a2a;
+}
+
+.auth-card h2 {
+    font-size: 22px;
+    font-weight: 700;
+    color: #f2f2f2;
+    margin-bottom: 8px;
+    text-align: center;
+}
+
+.auth-card p {
+    font-size: 14px;
+    color: #888;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.auth-card label {
+    display: block;
+    font-size: 13px;
+    font-weight: 600;
+    color: #c9a24d;
+    margin-bottom: 6px;
+    margin-top: 16px;
+}
+
+.auth-card input {
+    width: 100%;
+    padding: 13px 15px;
+    border-radius: 8px;
+    border: 1px solid #333;
+    background-color: #111;
+    color: #fff;
+    font-size: 14px;
+    box-sizing: border-box;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.auth-card input:focus {
+    border-color: #c9a24d;
+    box-shadow: 0 0 8px rgba(201, 162, 77, 0.4);
+    outline: none;
+}
+
+.auth-btn {
+    width: 100%;
+    margin-top: 28px;
+    padding: 14px;
+    background: linear-gradient(135deg, #c9a24d, #a8832b);
+    color: #0f0f0f;
+    border: none;
+    border-radius: 40px;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 0.6px;
+    cursor: pointer;
+    transition: box-shadow 0.2s, transform 0.2s;
+}
+
+.auth-btn:hover {
+    box-shadow: 0 10px 25px rgba(201, 162, 77, 0.4);
+    transform: translateY(-2px);
+}
+
+.auth-link {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 13px;
+    color: #888;
+}
+
+.auth-link a {
+    color: #c9a24d;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.auth-link a:hover {
+    text-decoration: underline;
+}
+
+.divider {
+    width: 40px;
+    height: 2px;
+    background: linear-gradient(135deg, #c9a24d, #a8832b);
+    margin: 0 auto 24px;
+    border-radius: 2px;
+}
+
+.error-msg {
+    background-color: rgba(220, 53, 69, 0.15);
+    border: 1px solid rgba(220, 53, 69, 0.3);
+    color: #ff6b7a;
+    padding: 10px 14px;
+    border-radius: 8px;
+    font-size: 13px;
+    text-align: center;
+    margin-bottom: 16px;
+}

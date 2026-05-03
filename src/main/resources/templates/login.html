@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - VFBarber</title>
+    <link rel="stylesheet" href="/login.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <h1>VFBarber</h1>
+        <h2>Corte, barba e estilo no ponto certo</h2>
+    </header>
+
+    <div class="auth-wrapper">
+        <div class="auth-card">
+            <h2>Entrar na conta</h2>
+            <div class="divider"></div>
+
+            <div th:if="${param.error}" class="error-msg">
+                Email ou senha incorretos. Tente novamente.
+            </div>
+
+            <form th:action="@{/login}" method="post">
+                <label>Email</label>
+                <input type="email" name="username" placeholder="seu@email.com" required/>
+
+                <label>Senha</label>
+                <input type="password" name="password" placeholder="••••••••" required/>
+
+                <button class="auth-btn" type="submit">Entrar</button>
+            </form>
+
+            <span class="auth-link">
+                Não tem conta? <a href="/cadastro">Cadastre-se grátis</a>
+            </span>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,149 @@
+
+.admin-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 900px;
+    margin: 0 auto 40px;
+    padding: 0 20px;
+}
+
+.admin-header h1 {
+    font-size: 28px;
+    font-weight: 800;
+}
+
+.logout-btn {
+    padding: 10px 24px;
+    background: transparent;
+    border: 2px solid #c9a24d;
+    color: #c9a24d;
+    border-radius: 40px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.2s;
+    margin: 0;
+}
+
+.logout-btn:hover {
+    background: #c9a24d;
+    color: #0f0f0f;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(201, 162, 77, 0.3);
+}
+
+.admin-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px 60px;
+}
+
+.stats-row {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 32px;
+    flex-wrap: wrap;
+}
+
+.stat-card {
+    background: #1a1a1a;
+    border: 1px solid #2a2a2a;
+    border-radius: 14px;
+    padding: 24px 32px;
+    flex: 1;
+    min-width: 140px;
+    text-align: center;
+}
+
+.stat-card .stat-number {
+    font-size: 36px;
+    font-weight: 800;
+    color: #c9a24d;
+    display: block;
+}
+
+.stat-card .stat-label {
+    font-size: 13px;
+    color: #888;
+    margin-top: 4px;
+}
+
+.table-card {
+    background: #1a1a1a;
+    border: 1px solid #2a2a2a;
+    border-radius: 18px;
+    overflow: hidden;
+}
+
+.table-card-header {
+    padding: 20px 24px;
+    border-bottom: 1px solid #2a2a2a;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.table-card-header h3 {
+    font-size: 16px;
+    font-weight: 700;
+    color: #f2f2f2;
+    margin: 0;
+}
+
+.badge {
+    background: linear-gradient(135deg, #c9a24d, #a8832b);
+    color: #0f0f0f;
+    font-size: 11px;
+    font-weight: 700;
+    padding: 3px 10px;
+    border-radius: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead th {
+    background: #111;
+    padding: 14px 20px;
+    text-align: left;
+    font-size: 11px;
+    font-weight: 700;
+    color: #c9a24d;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+}
+
+tbody tr {
+    border-top: 1px solid #222;
+    transition: background 0.15s;
+}
+
+tbody tr:hover {
+    background: #1f1f1f;
+}
+
+tbody td {
+    padding: 16px 20px;
+    font-size: 14px;
+    color: #ddd;
+}
+
+tbody td:first-child {
+    font-weight: 600;
+    color: #f2f2f2;
+}
+
+.empty-state {
+    text-align: center;
+    padding: 60px 20px;
+    color: #555;
+}
+
+.empty-state p {
+    font-size: 15px;
+    margin-top: 12px;
+}
